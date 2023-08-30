@@ -1289,7 +1289,7 @@ class Parser // extends PEAR
     {
         $this->_current_char = 0;
         $this->_formula = $formula;
-        $this->_lookahead = $formula{1};
+        $this->_lookahead = $formula[1];
         $this->_advance();
         $this->_parse_tree = $this->_condition();
         if (Utils::isError($this->_parse_tree)) {
